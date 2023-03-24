@@ -1,0 +1,31 @@
+* { /*CSS RESET*/
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#container {
+    border: 1px solid red;
+    height: 1500px;
+    position: relative;
+}
+
+.element {
+    background-color: gray;
+    padding: 10px;
+}
+
+.main-element {
+    background-color: yellow;
+    padding: 10px;
+    /*position: static; /*Mi elemento no se mueve*/
+    /*position: relative; /*Me permite usar top, bottom, right y left; se va a mover en base a su posición original*/
+    /*position: absolute; /*Se va a mover basada en el elemento padre e ignoramos por completo los elementos alrededor*/
+    /*position: fixed; /*No se ve afectado por el scroll e ignora los elementos a mi alrededor*/
+    position: sticky; /*Va a tener la posición original del elemento y al hacer scroll se fija en la pantalla*/
+    top: 10px;
+    left: 20px;
+    z-index: 2; /*Entre más alto sea el número será la prioridad en la "capa"*/
+    width: 300px;
+}
